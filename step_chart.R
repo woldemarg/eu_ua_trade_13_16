@@ -32,7 +32,9 @@ fake_group <- export_to_draw %>%
 export_to_draw %<>% bind_rows(fake_group)
 
 
-png(filename = "export_change.png", width = 800, height = 800)
+png(filename = "export_change.png",
+    width = 800,
+    height = 800)
 
 #проект графики
 ggplot(mapping = aes(x = group_numeric, y = growth, group = Partner)) +
@@ -46,6 +48,7 @@ ggplot(mapping = aes(x = group_numeric, y = growth, group = Partner)) +
     color = "#7F8590",
     alpha = 0.3,
     size = 0.75
-  )
+  ) +
+  theme_minimal()
 
 dev.off()

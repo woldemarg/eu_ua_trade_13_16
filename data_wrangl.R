@@ -63,5 +63,5 @@ exim_data  <- bind_data %>%
 
 
 #запись файлов для создания графики
-write_csv(export_grouped_eu, "export_growth.csv")
-write_csv(exim_data, "exim_absolute.csv")
+#write_csv(export_grouped_eu, "export_growth.csv")
+#write_csv(exim_data, "exim_absolute.csv")
