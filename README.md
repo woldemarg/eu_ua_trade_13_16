@@ -13,10 +13,12 @@
 
 4. Создание графики по товарообороту **scatterplot.R**
 Идея размещения стран в координатной сетке "экспорт/импорт" и использование log-осей  описаны [здесь]( http://novyden.blogspot.com/2017/06/logarithmic-scale-explained-with-us.html?m=1). Особенность графика – для создания эффекта градиента каждая линия разбита на множество отрезков, каждый со своим alpha-уровнем. Пример из книги [Hadley Wickham "ggplot2", стр. 52-53](http://ms.mcmaster.ca/~bolker/misc/ggplot2-book.pdf)
+
 ![turnover](https://raw.githubusercontent.com/woldemarg/eu_ua_trade_13_16/master/turnover_change.png "Проект графики по изменению товарооборота за 2013-2016гг.")
 
 5. Создание графики по экспорту **step_chart.R**
 Идея и трюк работы с geom_step() на примере анализа [Температуры в Киеве](http://textura.in.ua/post/162910213800/kyivweatherhistorybarcode)
+
 ![export](https://raw.githubusercontent.com/woldemarg/eu_ua_trade_13_16/master/export_change.png "Проект графики по изменение экспорта по товарнім группам за 2013-2016гг.")
 
 >П.С. Файл **data_wrangl.R** обращается к **get_data.R**, а тот, в свою очередь, выполняет **calc_index.R**. Результатом работы **data_wrangl.R** являются две таблицы для создания гарфики. Файлы **scatterplot.R** и **step_chart.R** обращаются к **data_wrangl.R**, поэтому можно начинать работы прямо с них.
